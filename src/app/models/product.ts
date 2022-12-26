@@ -6,6 +6,7 @@ export interface IProduct {
     description: string,
     categories: string[]
 }
+
 export class Product implements IProduct {
     constructor(
         public id: number,

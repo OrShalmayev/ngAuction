@@ -11,7 +11,6 @@ import {ProductItemComponent} from './product-item/product-item.component';
 import {ProductDetailComponent} from './product-detail/product-detail.component';
 import {SearchComponent} from './search/search.component';
 import {StarsComponent} from './stars/stars.component';
-import {CustomStateModule} from "./shared/custom-state/custom-state.module";
 
 @NgModule({
     declarations: [
@@ -28,11 +27,6 @@ import {CustomStateModule} from "./shared/custom-state/custom-state.module";
     imports: [
         BrowserModule,
         AppRoutingModule,
-        CustomStateModule.forRoot({
-            defaultState: {
-                products: []
-            }
-        })
     ],
     providers: [],
     bootstrap: [AppComponent]

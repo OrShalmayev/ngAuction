@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
-import {Product} from "../shared/product.service";
+import {IProduct} from "../models/product";
 
 @Component({
     selector: 'app-product-item',
@@ -8,7 +8,7 @@ import {Product} from "../shared/product.service";
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProductItemComponent implements OnInit {
-    @Input() product!: Product;
+    @Input() product!: IProduct;
 
     constructor() {
     }
